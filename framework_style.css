@@ -1,0 +1,99 @@
+ *{
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+ }
+ img{
+    max-width: 100%;
+ }
+ #div1{
+   background-image: url(./images/images-cloud.jpg);
+   width: 800px;
+   height: 700px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: top center;
+   opacity: 0.9;
+ }
+ #div1 h2{
+   margin-top: 200px;
+ } 
+ #font{
+   font-family:cursive;
+ }
+ .shape #square,.shape1 #square,.shape2 #square {
+   width: 40px;
+   height: 20px;
+   top: 10px;
+   left:25%;
+   background: rgb(61, 59, 59);
+ }
+ .shape #triangle-down,.shape1 #triangle-down,.shape2 #triangle-down{
+   width: 10px;
+   height: 20px;
+   left: 20%;
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+   border-top: 15px solid rgb(61,58,57);
+  }  
+ .shape{
+   margin-left: 85%;
+   margin-top: -50px;
+  }
+ .shape1{
+   margin-top: -50px;
+   margin-left: 60%;
+ }
+ .shape2{
+   margin-top: -50px;
+   margin-left: 50%;
+ }
+ .shape > #square{
+   color: white;
+   font-weight: 400;
+   text-align: center;
+ }
+ .shape1 > #square{
+   color: white;
+   font-weight: 400;
+   text-align: center;
+ }
+ .shape2 > #square{
+   color: white;
+   font-weight: 400;
+   text-align: center;
+ }
+ #progress,#div3{
+   padding: 15px;
+ }
+.fa-envelope{
+   color:white;
+   font-size: 35px;
+   text-align: center;
+   font-weight: 500;
+   background-color: rgba(228, 228, 46, 0.673);
+   padding: 8px;
+}
+#contact{
+   background-image: url(./images/images-cloud.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center center;
+   opacity: 1.5;
+}
+/*media querry apply*/
+@media only screen and (max-width: 576px){
+  #div1,#div2{
+    width:100%;
+  }
+}
+@media only screen and (max-width: 576px){
+  #div3,#progress{
+    width:100%;
+  }
+}
+@media only screen and (max-width: 576px){
+  #div4{
+    width:100%;
+  }
+}
