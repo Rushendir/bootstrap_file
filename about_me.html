@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Template Structure using Bootstrap</title>
+    <link rel="shortcut icon" href="./images/Bootstrap-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style_about.css">
+
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"crossorigin="anonymous"/>
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+ <nav class="navbar navbar-expand-md navbar-info bg-dark">
+    <div class="container">
+        <a href="#" class="navbar-brand h3">About me</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-label="toggler navigation" aria-expand="false">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#myhome" class="nav-link active">HOME</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#aboutme" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="dropdownmenu" aria-controls="false">ABOUT</a>
+                    <ul class="dropdown-menu" labelledby="dropdown-menu">
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a href="#" class="dropdown-item">HTML</a></li>
+                        <li><a href="#" class="dropdown-item">CSS</a></li>
+                        <li><a href="#" class="dropdown-item">JAVA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a href="#" class="dropdown-item">BOOTSTRAP</a></li>
+                        <li><a href="#" class="dropdown-item">JAVA SCRIPT</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#myservice" class="nav-link">SERVICE</a></li>
+                <li class="nav-item"><a href="#myportfolio" class="nav-link">PORTFOLIO</a></li>
+                <li class="nav-item"><a href="#mypricing" class="nav-link">PRICING</a></li>
+                <li class="nav-item"><a href="#myblog" class="nav-link">BLOG</a></li>
+                <li class="nav-item"><a href="#mycontact" class="nav-link">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+ </nav>
+ <div class="container" id="myhome"> 
+    <div class="carousel slide" id="carouselslide" data-bs-ride="carousel">
+         <!--<ol class="carousel-indicators">
+             <li data-bs-target="#carouselslide" data-slide-to="0" class="active"></li>
+             <li data-bs-target="#carouselslide" data-slide-to="1"></li>
+             <li data-bs-target="#carouselslide" data-slide-to="2"></li>
+         </ol>-->
+         <div class="carousel-inner">
+             <div class="carousel-item active">
+                 <img src="./images/images-cloud.jpg" class="d-block w-100 img-thumbnail" width="700" height="400" alt="image">
+                 <div class="carousel-caption">
+                     <h4>Hi,i'm</h4>
+                     <h2>From UK</h2>
+                     <p>
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </p>
+                 </div>
+             </div>
+             <div class="carousel-item">
+                <img src="./images/img-tree.jpg" class="d-block w-100 img-thumbnail" width="800" height="500" alt="image">
+                <div class="carousel-caption">
+                    <h3>second slide</h3>
+                </div>
+             </div>
+             <div class="carousel-item">
+                <img src="./images/images-cloud.jpg" class="d-block w-100 img-thumbnail" width="800" height="300" alt="image">
+                <div class="carousel-caption">
+                    <h3>Third slide</h3>
+                </div>
+             </div>
+         </div>
+             <a href="#carouselslide" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon"></span>
+             </a>
+             <a href="#carouselslide" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+    </div>
+       <div class="div1" id="aboutme">
+             <p class="text-center"><h2 class="text-center">ABOUT <span>ME</span><br> ______<span> ______</span> ______</h2></p>
+       </div>
+  </div>
+   <!--first part finish-->
+   <div class="container-fluid p-3 mt-2">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 w-50">
+                <img src="./images/girl-pic.png" class="ps-3" alt="image">
+            </div>
+            <div class="col-md-6 col-sm-12 p-2 text-center">
+                <p class="text-center"><h4 class="text-center p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis et, laudantium quibusdam sequi adipisci tempora alias at atque facere cupiditate facilis velit, incidunt distinctio provident libero earum molestiae id nisi, dicta dolor quidem! Quas eos mollitia unde explicabo quos sequi deserunt? Quidem magni sunt adipisci architecto similique cumque. <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, quia eum. Perferendis, illo? Ipsam obcaecati quo ipsa eveniet porro cum ipsum corporis vero tempora nam sunt, eius, architecto et labore? Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>  <br><br><br> <button class="btn btn-success" type="button">Download Resume</button> <button type="button">Hire Me</button>
+                </p>
+            </div>
+            <div class="col-md-12 mt-4 text-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-success">Experience</button>
+                <button type="button" class="btn btn-light">Education</button>
+                <button type="button" class="btn btn-light">Award</button>
+                <button type="button" class="btn btn-light">Skills</button>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 mt-4 mb-4">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="progress w-75 h-100" id="progress-bar">
+                            <div class="progress-bar progress-bar-warning" style="width: 90%; padding: 10px;"> 98.7%</div><br>
+                            <span><h4>HTML5</h4></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="progress w-75 h-100" id="progress-bar">
+                            <div class="progress-bar progress-bar-warning" style="width: 90%; padding: 10px;">95.8%</div>
+                            <span><h4>CSS3</h4></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="progress w-75 h-100" id="progress-bar">
+                            <div class="progress-bar progress-bar-warning" style="width: 90%; padding: 10px;">90.5%</div>
+                            <span><h4>PHP</h4></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="progress w-75 h-100" id="progress-bar">
+                            <div class="progress-bar progress-bar-warning" style="width: 75%; padding: 10px;">78.2%</div>
+                            <span><h4>Jquerry</h4></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+    <!--second part is finished-->
+    <div class="container-fluid bg-secondary" id="div2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="myservice"> 
+                <p class="text-center"><h2 class="text-center text-light">MY <span>SERVICES</span><br> ______<span>_____</span>______</h2></p>
+                <p class="text-center p-3"><h3 class="text-center p-3">A Wondefull serenity has taken possession of my entire soul, like these sweet mornings <br> of spring which i enjoy with my heart.</h3></p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-4 col-sm-12 bg-light">
+                <h3 class="text-center p-2 text-dark">
+                <p class="text-center"><img src="./images/icon1.png" alt="icon"></p>APP DEVELEPMENT</h3>
+
+                <p class="text-center p-2 text-dark"><h4 class="text-center p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga culpa sint quis delectus laboriosam iure eos quod inventore eaque expedita, accusantium at non repellendus aspernatur nobis quaerat consectetur voluptas.</h4></p>
+                <p class="text-center"><button class="btn btn-success" type="button">READ MORE</button></p>
+            </div>
+            <div class="col-md-4 col-sm-12 bg-info">
+                <h3 class="text-center p-2 text-dark">
+                <p class="text-center"><img src="./images/icon2.png" alt="icon"></p>GRAPHIC DESIGN</h3>
+
+                <p class="text-center p-2"><h4 class="text-center p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga culpa sint quis delectus laboriosam iure eos quod inventore eaque expedita, accusantium at non repellendus aspernatur nobis quaerat consectetur voluptas.</h4></p>
+                <p class="text-center"><button class="btn btn-success" type="button">READ MORE</button></p>
+            </div>
+            <div class="col-md-4 col-sm-12 bg-light">
+                <h3 class="text-center p-2 text-dark">
+                <p class="text-center"><img src="./images/icon3.png" alt="icon"></p>FLASH DESIGN</h3>
+
+                <p class="text-center p-2"><h4 class="text-center p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga culpa sint quis delectus laboriosam iure eos quod inventore eaque expedita, accusantium at non repellendus aspernatur nobis quaerat consectetur voluptas.</h4></p>
+                <p class="text-center"><button class="btn btn-success" type="button">READ MORE</button></p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-4 col-sm-12 bg-light">
+                <h3 class="text-center p-2 text-dark">
+                <p class="text-center"><img src="./images/icon01.png" alt="icon"></p>WEB DESIGN</h3>
+
+                <p class="text-center p-2"><h4 class="text-center p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga culpa sint quis delectus laboriosam iure eos quod inventore eaque expedita, accusantium at non repellendus aspernatur nobis quaerat consectetur voluptas.</h4></p>
+                <p class="text-center"><button class="btn btn-success" type="button">READ MORE</button></p>
+            </div>
+            <div class="col-md-4 col-sm-12 bg-info">
+                <h3 class="text-center p-2 text-dark">
+                <p class="text-center"><img src="./images/camera.png" alt="icon"></p>PHOTOGRAPHY</h3>
+
+                <p class="text-center p-2"><h4 class="text-center p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga culpa sint quis delectus laboriosam iure eos quod inventore eaque expedita, accusantium at non repellendus aspernatur nobis quaerat consectetur voluptas.</h4></p>
+                <p class="text-center"><button class="btn btn-success" type="button">READ MORE</button></p>
+            </div>
+            <div class="col-md-4 col-sm-12 bg-light">
+                <h3 class="text-center p-2 text-dark">
+                <p class="text-center"><img src="./images/umberalla.png" alt="icon"></p>SUPPORT</h3>
+
+                <p class="text-center p-2"><h4 class="text-center p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga culpa sint quis delectus laboriosam iure eos quod inventore eaque expedita, accusantium at non repellendus aspernatur nobis quaerat consectetur voluptas.</h4></p>
+                <p class="text-center"><button class="btn btn-success" type="button">READ MORE</button></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--third part is finished-->
+    <div class="container-fluid mt-3" id="div3">
+        <div class="container well">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center"><h2 class="text-center">MY <span>TEAM</span><br> ______<span>_____</span>______</h2>
+                    </p>
+                    <p class="text-center p-3"><h3 class="text-center p-3">A Wondefull serenity has taken possession of my entire soul, like these sweet mornings <br> of spring which i enjoy with my heart.</h3></p>
+                </div>
+            </div>
+        <div class="row">
+           <div class="col">
+            <div class="card bg-secondary" style="width: 18rem;">
+                        <p class="text-center"><img src="./images/Thomas.jpg" width="100%" height="230" alt="image"></p> 
+                         <p class="text-center text-light bg-secondary"><i class="fab fa-google"></i>
+                            <i class="fab fa-twitter-square"></i>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </p>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">THOMAS ROSS</h4>
+                            <h5 class="card-subtitle text-center">FUNDER & DIRECTOR</h5>
+                        </div>
+                    </div>
+                </div>
+          <div class="col">
+            <div class="card bg-secondary" style="width: 18rem;">
+              <p class="text-center"><img src="./images/rhythm.jpg" width="100%" height="230" alt="image"></p> 
+               <p class="text-center text-light bg-secondary"><i class="fab fa-google"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-linkedin"></i></p>
+           <div class="card-body">
+             <h4 class="card-title text-center">RESA RHYTHM</h4>
+            <h5 class="card-subtitle text-center">CO-FUNDER</h5>
+            </div>
+            </div>
+          </div>
+       <div class="col">
+          <div class="card bg-secondary" style="width: 18rem;">
+             <p class="text-center"><img src="./images/emma jane.jpg" width="100%" height="230" alt="image"></p> 
+              <p class="text-center text-light bg-secondary"><i class="fab fa-google"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-linkedin"></i></p>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">EMMA JANE</h4>
+                        <h5 class="card-subtitle text-center">AST.DIRECTOR</h5>
+                </div>
+              </div>
+          </div>
+        <div class="col">
+        <div class="card bg-secondary" style="width: 18rem;">
+        <p class="text-center"><img src="./images/john.jpg" width="100%" height="230" alt="image"></p> 
+            <p class="text-center text-light bg-secondary"><i class="fab fa-google"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-linkedin"></i></p>
+            <div class="card-body">
+              <h4 class="card-title text-center">JOHN MARTA</h4>
+              <h5 class="card-subtitle text-center">AST.DIRECTOR</h5>
+            </div>
+        </div>  
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--fourth part is finished-->
+    <div class="container-fluid bg-secondary mt-3" id="myportfolio">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-12">
+                    <p class="text-center"><h2 class="text-center text-light">PORTFOLIO <span>GALLERY</span><br> ______
+                    <span>_____</span> ______</h2></p>
+                    <p class="text-center p-3"><h3 class="text-center text-light p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eaque maxime provident explicabo consequatur, consequuntur expedita!</h3></p>
+                    <p class="text-center"> <button class="btn btn-success" type="button">ALL</button>
+                        <button class="btn btn-light" type="button">ILLUSTRATIONS</button>
+                        <button class="btn btn-light" type="button">PHOTOGRAPHY</button>
+                        <button class="btn btn-light" type="button">websites</button>
+                        <button class="btn btn-light" type="button">Art</button></p>
+                 </div>
+                 <div class="col-md-3 col-sm-12">
+                    <img src="./images/Books.png" width="220" height="220" alt="image">
+                 </div>
+                 <div class="col-md-3 col-sm-12">
+                     <img src="./images/Tea_cup.png" width="220" height="220" alt="image">
+                 </div>
+                 <div class="col-md-3 col-sm-12">
+                     <img src="./images/headset.png" width="220" height="220" alt="image">
+                 </div>
+                 <div class="col-md-3 col-sm-12">
+                     <img src="./images/paint-img.png" width="220" height="220" alt="image">
+                 </div>
+                 <div class="col-md-3 col-sm-12 mt-4 mb-4">
+                     <img src="./images/spex.png" width="220" height="220" alt="image">
+                 </div>
+                 <div class="col-md-3 col-sm-12 mt-4">
+                     <img src="./images/icon02.png" width="220" height="220" alt="image">
+                 </div>
+                 <div class="col-md-3 col-sm-12 mt-4">
+                     <img src="./images/color-img.png" width="220" height="220" alt="">
+                 </div>
+                 <div class="col-md-3 col-sm-12 mt-4">
+                     <img src="./images/Binaculor.png" width="220" height="220" alt="image">
+                 </div>
+             </div>
+         </div>
+    </div>
+    <!--fifth part is finished-->
+    <div class="container-fluid mt-3 bg-light" id="mypricing">
+       <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+               <p class="text-center"><h2 class="text-center">PRICING <span>PLAN</span><br> ______
+               <span>_____</span> ______</h2></p>  
+               <p class="text-center p-3"><h3 class="text-center p-3">A Wondefull serenity has taken possession of my entire soul, like these sweet mornings <br> of spring which i enjoy with my heart.</h3></p>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <p class="text-center"><h3 class="text-center bg-secondary text-dark p-3">STARTER</h3></p>
+                  <p class="text-center text-light bg-success">$ 19 /month*</p>
+                  <div class="card-body">
+                    <h4 class="card-title text-center">10GB storage <br> 10 Emails <br>10 Domains <br>unlimited brandwidth </h4>
+                    <p class="card-subtitle text-center p-3"><button class="btn btn-success p-2"><h4>choose plan</h4></button></p>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <p class="text-center"><h3 class="text-center bg-success text-light p-3">STANDARD</h3></p>
+                  <p class="text-center text-light bg-success">$ 29 /month*</p>
+                  <div class="card-body">
+                    <h4 class="card-title text-center">15GB storage <br> 15 Emails <br>15 Domains <br>unlimited brandwidth </h4>
+                    <p class="card-subtitle text-center p-3"><button class="btn btn-success p-2"><h4>choose plan</h4></button></p>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <p class="text-center"><h3 class="text-center bg-secondary text-dark p-3">PREMIUM</h3></p>
+                  <div class="price-circle">
+                  <p class="text-center text-light bg-success">$ 39 /month*</p></div>
+                  <div class="card-body">
+                    <h4 class="card-title text-center">20GB storage <br> 20 Emails <br>20 Domains <br>unlimited brandwidth </h4>
+                    <p class="card-subtitle text-center p-3"><button class="btn btn-success p-2"><h4>choose plan</h4></button></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    <!--sixth part is finished-->
+    <div class="container-fluid mt-3" id="div6">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12 bg-secondary">
+                <p class="text-center"><h2 class="text-center text-light">Let's Work<span>Together</span><br> ______
+                <span>_____</span> ______</h2></p>
+                <p class="text-center p-3"><h3 class="text-center text-light p-3">I am available for freelance.</h3></p>
+                <p class="text-center"><button class="btn text-dark text-center btn-light p-2" type="button">Get Quotes</button></p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--seventh part is finished-->
+   <div class="container-fluid" id="myblog">
+       <div class="container">
+          <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <p class="text-center"><h2 class="text-center">BLOG<span> POST</span><br> ______
+                 <span>_____</span> ______</h2></p> 
+                <p class="text-center p-3"><h3 class="text-center p-3">A Wondefull serenity has taken possession of my entire soul, like these sweet mornings <br> of spring which i enjoy with my heart.</h3></p>
+                <p class="tect-center"><h2 class="text-success text-center"> < ></h2></p>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <p class="text-center"><img src="./images/Blog-1.png" width="100%" height="230" alt="image"></p> 
+                  <div class="card-body">
+                    <h4 class="card-title text-center">A Small River Duden place</h4>
+                    <h5 class="card-subtitle text-center p-3">The Big Oxmox advised her not to do so because there were,<span>Read more</span></h5>
+                  </div>
+                  <div class="card-footer bg-secondary text-dark">
+                      <p class="text-center p-3"><h5><i class="fa fa-user"></i>zinia jones <i class="fa fa-address-card"></i>oct 12,2017. 8</h5></p>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                  <p class="text-center"><img src="./images/Blog-2.png" width="100%" height="230" alt="image"></p> 
+                  <div class="card-body">
+                    <h4 class="card-title text-center">A Small River Duden place</h4>
+                    <h5 class="card-subtitle text-center p-3">The Big Oxmox advised her not to do so because there were,<span>Read more</span></h5>
+                  </div>
+                  <div class="card-footer bg-secondary text-dark">
+                      <p class="text-center p-3"><h5><i class="fa fa-user"></i>zinia jones <i class="fa fa-address-card"></i>oct 12,2017. 8</h5></p>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                  <p class="text-center"><img src="./images/Blog-3.png" width="100%" height="230" alt="image"></p> 
+                  <div class="card-body">
+                    <h4 class="card-title text-center">A Small River Duden place</h4>
+                    <h5 class="card-subtitle text-center p-3">The Big Oxmox advised her not to do so because there were,<span>Read more</span></h5>
+                  </div>
+                  <div class="card-footer bg-secondary text-dark">
+                      <p class="text-center p-3"><h5><i class="fa fa-user"></i>zinia jones <i class="fa fa-address-card"></i>oct 12,2017. 8</h5></p>
+                  </div>
+                </div>
+            </div>
+          </div>
+       </div>
+   </div>
+   <!--eighth part is finished-->
+    <div class="container-fluid mt-4" id="div8">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="text-center"><h2 class="text-center text-light">WHAT<span> CLIENT SAY!</span><br> ______<span>_____</span>______</h2></p>
+                <section class="profile text-center">
+                    <img src="./images/Thomas.jpg" id="prof2" alt="image">
+                </section> 
+                <section class="profile text-center">
+                    <img src="./images/quote-left.png" alt="image">
+                    <img src="./images/star.png" alt="image">
+                    <img src="./images/star.png" alt="image">
+                    <img src="./images/star.png" alt="image">
+                    <img src="./images/star.png" alt="image">
+                </section>
+              </div>
+              <div class="col-md-12">
+                  <h4 class="text-center text-primary p-3">if several languages coalesce,the grammer of the resulting language is more simple and regular than that of the individual languages.</h4>
+                  <h3 class="text-center text-light p-3">MIKE ARTHUR</h3>
+                  <h4 class="text-center text-light p-3">CEO,MGSIT</h4>
+                  <p class="text-center">
+                      <input type="radio">
+                      <input type="radio">
+                      <input type="radio" checked>
+                  </p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!--ninth part over-->
+    <div class="container-fluid" id="div9">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center"><h2 class="text-center text-dark">MY<span> CLIENTS</span><br> ______<span>_____</span>______</h2></p>
+                    <p class="text-center">
+                        <img src="./images/css.png" alt="image">
+                        <img src="./images/json.png" alt="image">
+                        <img src="./images/pdf.png" alt="image">
+                        <img src="./images/ai.png" alt="image">
+                        <img src="./images/id php.png" alt="image">
+                        <img src="./images/id php.png" alt="image">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!--div9 finished-->
+   <div class="container-fluid mt-3 bg-secondary" id="div10">
+       <div class="container">
+           <div class="row">
+             <div class="col-md-12">
+                <p class="text-center"><h2 class="text-center text-light"> SUCCESS<span> STORY</span><br> ______<span>_____</span>______</h2></p>
+             </div>
+             <div class="col-md-3 col-sm-12">
+                 <p class="text-center">
+                     <img src="./images/Tea_cup.png" class="tea-cup" width="60" alt="image">
+                     <h2 class="text-center text-light p-3">34360</h2>
+                     <h5 class="text-center text-light p-3">CUPS OF COFFEE</h5>
+                 </p>
+             </div>
+             <div class="col-md-3 col-sm-12">
+                <p class="text-center">
+                    <img src="./images/trophy.png" class="tea-cup" width="60" alt="image">
+                    <h2 class="text-center text-light p-3">32</h2>
+                    <h5 class="text-center text-light p-3">AWARDS</h5>
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <p class="text-center">
+                    <img src="./images/book.png" class="tea-cup" width="60" alt="image">
+                    <h2 class="text-center text-light p-3">218</h2>
+                    <h5 class="text-center text-light p-3">BOOKS</h5>
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <p class="text-center">
+                    <img src="./images/people.png" class="tea-cup" width="60" alt="image">
+                    <h2 class="text-center text-light p-3">949360</h2>
+                    <h5 class="text-center text-light p-3">FANS</h5>
+                </p>
+            </div>
+           </div>
+       </div>
+   </div>
+   <!--div10 part finished-->
+   <div class="container-fluid mt-3" id="mycontact">
+       <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                <p class="text-center"><h2 class="text-center text-dark"> WANNA<span> TALK</span><br> ______<span>_____</span>______</h2></p>
+                <p class="text-center p-3"><h3 class="text-center p-3">A Wondefull serenity has taken possession of my entire soul, like these sweet mornings <br> of spring which i enjoy with my heart.</h3></p>
+              </div>
+              <div class="col-md-6 col-sm-12" id="subform">
+                  <div class="write">
+                    <p class="text-center"><h2 class="text-center text-dark"> WRITE<span> ME</span><br><span>_____</span>______</h2></p>
+                  </div>
+                  <div class="form">
+                    <div class="input-group">
+                      <span class="input-group-text" id="form-icon"><i class="fa fa-user"></i></span>
+                      <input type="text" name="txtname" class="form-control" placeholder="Your Name*" size="20" required>
+                    </div><br><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="form-icon"><i class="fa fa-envelope"></i></span>
+                        <input type="email" name="ememail" class="form-control" placeholder="Your Email*" size="20" required>
+                    </div><br><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="form-icon"><i class="fa fa-phone"></i></span>
+                        <input type="number" name="numphone" class="form-control" placeholder="phone* use only Digit with/without + sign" size="20" required>
+                      </div><br><br>
+                      <div class="input-group">
+                        <span class="input-group-text" id="form-icon"><i class="fa fa-address-card"></i></span>
+                        <input type="text" name="txtname" class="form-control" placeholder="Write comment here*" size="20" required>
+                      </div><br><br> 
+                      <div class="input-group">
+                        <input type="button" name="submit" size="8" class="form-control bg-success text-light" id="sub" value="send" required> <h4 class="text-center text-dander p-3">*required fields</h4>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-12" id="subform">
+              <div class="write">
+                <p class="text-center"><h2 class="text-center text-dark"> GET FREE<span> QUOTE</span><br><span>_____</span>______</h2></p>
+              </div>
+              <div class="form">
+                <div class="input-group">
+                    <span class="input-group-text" id="form-icon"><i class="fa fa-user"></i></span>
+                    <input type="text" name="txtname" class="form-control" placeholder="Your Name*" size="20" required>
+                </div><br><br>
+                <div class="input-group">
+                    <span class="input-group-text" id="form-icon"><i class="fa fa-envelope"></i></span>
+                    <input type="email" name="ememail" class="form-control" placeholder="Email Address*" size="20" required>
+                </div><br><br>
+                <div class="input-group">
+                    <span class="input-group-text" id="form-icon"><i class="fa fa-phone"></i></span>
+                    <input type="number" name="numphone" class="form-control" placeholder="phone* use only Digit with/without + sign" size="20" required>
+                </div><br><br>
+                <div class="input-group">
+                    <span class="input-group-text" id="form-icon"><i class="fa fa-home"></i></span>
+                    <input type="text" name="txtname" class="form-control" placeholder="Address*" size="20" required>
+                 </div><br><br> 
+                 <div class="input-group">
+                    <input type="button" name="submit" size="8" class="form-control bg-success text-light" id="sub" value="send" required> <h4 class="text-center text-dander p-3">*required fields</h4>
+                </div>
+              </div>
+             </div>
+          </div>
+       </div>
+   </div>
+   <div class="container-fluid mt-3">
+       <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-12" id="subform1">
+                <h4 class="text-center text-dark"><i class="fa fa-home"></i><br> 70 Trend Rd,Luton LU3 1TA</h4>
+            </div>
+            <div class="col-4" id="subform1">
+               
+               <h4 class="text-center text-dark"><i class="fa fa-envelope"></i><br> sales@yourwebsite.com</h4>
+           </div>
+           <div class="col-4" id="subform1">
+               
+               <h4 class="text-center text-dark"><i class="fa fa-phone"></i><br> +0000 0000 0000</h4>
+           </div>
+          </div>
+       </div>
+   </div>
+   <!--div11 is finished-->
+   <div class="container-fluid mt-3 bg-secondary" id="footer">
+     <div class="container">
+         <div class="row">
+         <div class="col-md-4 col-sm-12">
+             <div class="news">
+                <p class="text-center"><h2 class="text-center text-light"> SUBSCRIBE<span> NEWSLETTER</span><br><span>_____</span>______</h2></p>
+                <p class="text-center">
+                 <h4 class="text-center text-light p-2">By subscribing to our mailing list you will always get latest news from us.</h4>
+                </p>
+             </div>
+             <div class="input-group">
+                <input type="email" name="ememail" class="form-control" placeholder="Email address*" size="20" required>
+                <span class="input-group-text" id="form-icon"><i class="fa fa-envelope"></i></span>
+            </div>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <p class="text-center"><h2 class="text-center text-light"> RECENT<span> WORK</span><br><span>_____</span>______</h2>
+            </p>
+            <p class="text-center"> <img src="./images/zzzimg2.png" alt="image"></p>
+         </div>
+         <div class="col-md-4 col-sm-12">
+            <p class="text-center"><h2 class="text-center text-light"> CONTACT<span> DETAILS</span><br><span>_____</span>______
+            </h2></p>
+            <h5 class="text-center text-light"><i class="fa fa-home"></i>    70 Trend Rd,Luton LU3 1TA</h5>
+            <h5 class="text-center text-light"><i class="fa fa-phone"></i>   +0000 0000 0000</h5>
+            <h5 class="text-center text-light"><i class="fa fa-envelope"></i> sales@yourwebsite.com</h5>
+            <p class="text-center text-light bg-secondary"><i class="fab fa-google"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-linkedin"></i></p>
+         </div>
+         <div class="col-md-12">
+             <hr class="text-light"><i class="fa fa-home"></i>
+             <p class="text-center text-light p-3"> About us          @2022 All rights Reserved</p>
+         </div>
+         </div>
+     </div>
+   </div>
+
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+<script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+

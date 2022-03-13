@@ -1,0 +1,91 @@
+*{
+     box-sizing: border-box;
+     -webkit-tap-highlight-color: transparent;
+     font-variant: small-caps;
+     margin: 0;
+ }
+ img{
+    max-width: 100%;
+ }
+ .navbar-toggler-icon{
+     background-color: rgb(255, 94, 0);
+     width: 0.65rem;
+     height: 0.65rem;
+ }
+ .div1 span,#div2 span{
+     color:green;
+     font-weight: 500;
+ }
+ #div2 h3{
+     color: white;
+ }
+ #div3 span,#myportfolio span{
+    color:green;
+    font-weight: 500;
+ }
+ #mypricing span,#div6 span{
+    color:green;
+    font-weight: 500;
+ }
+ #myblog span,#div8 span{
+   color:green;
+   font-weight: 500;
+}
+.write span{
+   color:green;
+   font-weight: 500;
+}
+#footer span{
+   color:green;
+   font-weight: 500;
+}
+ #div9 span,#div10 span,#mycontact span{
+    color:green;
+    font-weight: 500;
+ }
+ #prof2{
+    width: 125px;
+    height: 125px;
+    border: 2px solid green;
+    border-radius: 50%;
+    opacity: 1.5;
+ }
+ .tea-cup{
+    width: 80px;
+    height: 80px;
+    border: 2px solid green;
+    border-radius: 50%;
+    opacity: 1.5;
+ }
+ #form-icon{
+    background-color: lightgreen;
+ }
+ #div6{
+     background-image: url(./images/images-cloud.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+ }
+ #sub{
+    background-color: lightgreen;
+    color: white;
+ }
+ .input-group h4{
+    font-size: larger;
+    color: brown;
+ }
+ #subform{
+    background-color: rgb(201, 189, 189);
+    width: 45%;
+ }
+ #subform1{
+    background-color: lightgrey;
+    width: 32%;
+ }
+ #div8{
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    opacity: 0.6;
+ }
